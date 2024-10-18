@@ -29,8 +29,22 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-
+                    @role('Super Admin')
+                    <ul class="navbar-nav me-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('role.index') }}">{{ __('Role') }}</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('role.index') }}">{{ __('User') }}</a>
+                        </li>
+                    </ul>
+                    @endrole
+                    <ul class="navbar-nav me-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">{{ __('Test') }}</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
